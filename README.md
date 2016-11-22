@@ -1,4 +1,4 @@
-## Synopsis
+## tinkerT
 
 In this repo i work on different technoligies related to the field of embedded systems 
 
