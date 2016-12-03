@@ -109,11 +109,12 @@ void setup()
   pinMode(LED_RED, OUTPUT);
   pinsInit();
   debug.println("Gsm module power control pins initialized");
+  powerOn();
 }
 
 void loop() 
 { 
-  //ideal for sending AT commands to gsm Module directly
+  //this portion is for testing AT commands to gsm Module directly
   if (debug.available()) 
   {
       Serial1.write(debug.read());
@@ -122,7 +123,9 @@ void loop()
   {
     debug.write(Serial1.read());
   }
-  if(debug.available()>0)
+
+  //this portion is for gsm power testing
+  /*if(debug.available()>0)
   {
     char ch = (char)debug.read();
     if(ch=='1')
@@ -144,7 +147,7 @@ void loop()
       else
         debug.println("neoway Off");           
     }//if query cmd 6 came
-  }//if any command got from debug port
+  }//if any command got from debug port*/
 }
 
 

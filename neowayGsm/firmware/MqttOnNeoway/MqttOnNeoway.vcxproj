@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <ProjectName>MqttOnNeoway</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\libraries\SoftwareSerial\src;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\libraries\SoftwareSerial\src\utility;C:\Program Files (x86)\Arduino\libraries;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\libraries;C:\Users\User\Documents\Arduino\libraries;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\cores\MightyCore;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\cores\MightyCore\avr-libc;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\variants\standard;C:\Users\User\Documents\Arduino\MqttOnNeoway;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\User\Documents\Arduino\MqttOnNeoway\__vm\.MqttOnNeoway.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega1284p__;__AVR_ATmega1284P__;_VMDEBUG=1;F_CPU=8000000L;ARDUINO=106012;ARDUINO_AVR_ATmega1284;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\libraries\SoftwareSerial\src;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\libraries\SoftwareSerial\src\utility;C:\Program Files (x86)\Arduino\libraries;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\libraries;C:\Users\User\Documents\Arduino\libraries;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\cores\MightyCore;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\cores\MightyCore\avr-libc;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\variants\standard;C:\Users\User\Documents\Arduino\MqttOnNeoway;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\cores\MightyCore;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\variants\standard;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\libraries\SoftwareSerial\src;C:\Program Files (x86)\Arduino\libraries;C:\Users\User\AppData\Local\arduino15\packages\MightyCore\hardware\avr\1.0.7\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\peeduy4t.zrn\Micro Platforms\default\debuggers;C:\Users\User\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\User\Documents\Arduino\MqttOnNeoway\__vm\.MqttOnNeoway.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__AVR_ATmega1284p__;__AVR_ATmega1284P__;F_CPU=8000000L;ARDUINO=106012;ARDUINO_AVR_ATmega1284;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MqttOnNeoway.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GsmClient.h" />
+    <ClInclude Include="NeowayM590.h" />
+    <ClInclude Include="PubSubClient\PubSubClient.h" />
+    <ClInclude Include="Time\Time.h" />
+    <ClInclude Include="__vm\.MqttOnNeoway.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GsmClient.cpp" />
+    <ClCompile Include="NeowayM590.cpp" />
+    <ClCompile Include="PubSubClient\PubSubClient.cpp" />
+    <ClCompile Include="Time\DateStrings.cpp" />
+    <ClCompile Include="Time\Time.cpp" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
