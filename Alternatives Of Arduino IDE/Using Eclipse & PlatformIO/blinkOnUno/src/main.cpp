@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 void setup()
 {
   /************************** pointer ***********************************/
@@ -6,6 +8,4 @@ void setup()
 }
 
 void loop()
-{
-
-}
+{}
